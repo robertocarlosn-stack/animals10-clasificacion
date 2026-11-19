@@ -1,0 +1,9 @@
+.venv/
+data/
+artifacts/
+tmp/
+conf/tokendataset.txt
+__pycache__/
+.ipynb_checkpoints/
+.pytest_cache/
+*.pyc

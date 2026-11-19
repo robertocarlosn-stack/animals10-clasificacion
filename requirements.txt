@@ -1,0 +1,13 @@
+# Entorno probado: Python 3.12
+numpy==2.5.5
+pandas==3.0.5
+scipy==1.18.1
+scikit-learn==1.9.0
+matplotlib==3.11.1
+Pillow==12.3.0
+joblib==1.6.0
+nbformat>=5.10,<6
+nbclient>=0.10,<1
+ipykernel>=6,<8
+tensorflow-cpu==2.21.0; platform_system == "Windows"
+tensorflow==2.21.0; platform_system != "Windows"
