@@ -7,9 +7,11 @@ Proyecto de clasificación de imágenes de diez animales. Un extractor MobileNet
 - [`clasificacion_animals10.ipynb`](clasificacion_animals10.ipynb): análisis completo, código ejecutado y gráficos.
 - [`explicaciones.md`](explicaciones.md): decisiones y resultados de cada etapa.
 - [`guion_defensa.md`](guion_defensa.md): relato breve y respuestas a preguntas previsibles.
+- [`evaluacion_rubrica_y_preguntas.md`](evaluacion_rubrica_y_preguntas.md): revisión contra la rúbrica y respuestas para la defensa.
 - [`requirements.txt`](requirements.txt): dependencias del entorno probado con Python 3.12.
 - `figures/`: selección de gráficos para consultar sin abrir el notebook.
-- `artifacts/`: cachés, tablas, modelo y resultados generados al ejecutar; esta carpeta no se versiona.
+- `results/`: copia ligera de particiones, configuraciones, métricas y predicciones finales.
+- `artifacts/`: cachés, embeddings, modelos y demás salidas generadas al ejecutar; esta carpeta no se versiona.
 
 ## Datos y entorno
 
@@ -38,5 +40,7 @@ Ambos modelos se reentrenaron con las 20 941 imágenes de desarrollo. La SVM sel
 ## Reproducibilidad y límites
 
 Las particiones, semillas, parámetros y versiones quedan registrados en el notebook y en los metadatos de `artifacts/`. La caché de embeddings permite reanudar una extracción interrumpida. El test se procesa después de fijar el modelo ganador. La ejecución completa en CPU puede tardar bastante, especialmente al extraer características de las 26 177 imágenes. Los resultados corresponden a este conjunto y a MobileNetV2 congelado; no prueban generalización a otras fuentes de imágenes.
+
+La copia de `results/` conserva las tablas y resúmenes necesarios para revisar el estudio sin descargar el dataset. Después de una nueva ejecución, actualízala con `.venv\Scripts\python.exe scripts\export_results.py`. Los embeddings y los modelos ajustados se regeneran al ejecutar el notebook, porque ocupan mucho más espacio. Las imágenes de `conf/Rubrica.jpeg` y `conf/items.jpeg` documentan los criterios usados en la [evaluación del proyecto](evaluacion_rubrica_y_preguntas.md).
 
 El código y la documentación del proyecto se distribuyen bajo la [licencia MIT](LICENSE). Las imágenes Animals-10 y los pesos ImageNet mantienen sus propias condiciones de uso y no se incluyen en esta licencia.

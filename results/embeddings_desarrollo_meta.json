@@ -1,0 +1,15 @@
+{
+  "manifest_sha256": "1eefd6c95541b043a030f2b062df83d14448e1ddb772c6907df8edda00a8931a",
+  "tensorflow_version": "2.21.0",
+  "model": "MobileNetV2",
+  "weights": "imagenet",
+  "include_top": false,
+  "pooling": "avg",
+  "image_size": [
+    224,
+    224
+  ],
+  "embedding_dim": 1280,
+  "rows": 20941,
+  "dtype": "float32"
+}

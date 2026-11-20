@@ -1,5 +1,7 @@
 # Guion breve para la defensa
 
+La evaluación por ítem y un banco de treinta preguntas con respuestas están en [`evaluacion_rubrica_y_preguntas.md`](evaluacion_rubrica_y_preguntas.md).
+
 ## 1. Pregunta y datos
 
 La pregunta es si una SVM y una regresión logística difieren en macro F1 al clasificar Animals-10 sobre representaciones de MobileNetV2. Se inspeccionaron 26 179 imágenes, se excluyeron dos por calidad y se separaron 20 941 para desarrollo y 5 236 para test. Las particiones respetan grupos de imágenes duplicadas o muy parecidas detectadas.

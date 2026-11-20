@@ -1,0 +1,11 @@
+,cane,cavallo,elefante,farfalla,gallina,gatto,mucca,pecora,ragno,scoiattolo
+cane,962,3,0,1,4,3,0,0,0,0
+cavallo,8,503,1,1,1,0,8,2,0,0
+elefante,5,1,277,0,0,1,1,2,0,2
+farfalla,2,0,1,408,2,0,0,0,9,0
+gallina,6,0,0,0,613,0,0,0,1,0
+gatto,9,0,0,0,0,322,0,0,0,3
+mucca,7,11,0,1,2,0,340,11,0,1
+pecora,7,1,0,1,2,0,8,345,0,0
+ragno,3,0,0,8,2,0,0,0,949,2
+scoiattolo,1,0,0,0,0,0,2,2,2,366

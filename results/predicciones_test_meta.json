@@ -1,0 +1,20 @@
+{
+  "model": "svm_rbf",
+  "config_sha256": "126d67ac904397b3f0e5cda78c28e613977daf4ebe01aa5bd7a48e0a6ca98641",
+  "inference_sha256": "bc3f1c287fb6cfce2913a85ddc9fe4caf3dc86cfe0cc2015dafaa64eee8e52a5",
+  "manifest_sha256": "1eefd6c95541b043a030f2b062df83d14448e1ddb772c6907df8edda00a8931a",
+  "test_embeddings": {
+    "manifest_sha256": "1eefd6c95541b043a030f2b062df83d14448e1ddb772c6907df8edda00a8931a",
+    "tensorflow_version": "2.21.0",
+    "model": "MobileNetV2",
+    "weights": "imagenet",
+    "pooling": "avg",
+    "image_size": [
+      224,
+      224
+    ],
+    "embedding_dim": 1280,
+    "rows": 5236,
+    "dtype": "float32"
+  }
+}

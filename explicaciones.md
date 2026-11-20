@@ -107,6 +107,10 @@ La extracción local se completó para las **20 941 imágenes de desarrollo**. `
 
 `artifacts/figura_embeddings_desarrollo.png` reúne una dispersión PCA de hasta 200 embeddings por clase y un diagrama de cajas de la norma L2 por clase. Los datos proyectados quedan en `artifacts/proyeccion_pca_desarrollo.csv`. Las dos primeras componentes explican aproximadamente **9,99 %** de la varianza de esta muestra, de modo que la superposición o separación en el plano debe interpretarse con cautela. En la figura se distinguen parcialmente algunos animales, pero no permite medir por sí sola la calidad de clasificación. El t-SNE previsto para la etapa 6 ofrecerá otra vista exploratoria.
 
+### Selección de características
+
+La rúbrica permite omitir una selección explícita para imágenes o transferencia de aprendizaje. Los dos clasificadores reciben los mismos 1 280 valores de MobileNetV2. Un filtro adicional requeriría otra decisión de ajuste y podría eliminar información visual útil. PCA y t-SNE se usan solo para visualización; no transforman los vectores que entran en la búsqueda, la comparación estadística o el test. Esta decisión también se justifica dentro del notebook.
+
 ## Etapa 4. Pipelines, búsqueda y curvas
 
 ### Objetivo y separación de funciones
@@ -215,11 +219,11 @@ El notebook conserva salidas de todas las etapas y gráficos ejecutados. `README
 
 ### Referencias
 
-1. A. Corrado, [“Animals-10”](https://www.kaggle.com/datasets/alessiocorrado99/animals10), Kaggle.
-2. M. Sandler et al., [“MobileNetV2: Inverted Residuals and Linear Bottlenecks”](https://openaccess.thecvf.com/content_cvpr_2018/html/Sandler_MobileNetV2_Inverted_Residuals_CVPR_2018_paper.html), *CVPR*, 2018.
-3. J. Deng et al., [“ImageNet: A Large-Scale Hierarchical Image Database”](https://image-net.org/static_files/papers/imagenet_cvpr09.pdf), *CVPR*, 2009.
+1. A. Corrado, [“Animals-10”](https://www.kaggle.com/datasets/alessiocorrado99/animals10), Kaggle. [En línea]. Disponible en: https://www.kaggle.com/datasets/alessiocorrado99/animals10.
+2. M. Sandler, A. Howard, M. Zhu, A. Zhmoginov y L.-C. Chen, [“MobileNetV2: Inverted Residuals and Linear Bottlenecks”](https://openaccess.thecvf.com/content_cvpr_2018/html/Sandler_MobileNetV2_Inverted_Residuals_CVPR_2018_paper.html), en *Proc. IEEE/CVF CVPR*, 2018, pp. 4510–4520.
+3. J. Deng et al., [“ImageNet: A Large-Scale Hierarchical Image Database”](https://image-net.org/static_files/papers/imagenet_cvpr09.pdf), en *Proc. IEEE CVPR*, 2009, pp. 248–255.
 4. F. Pedregosa et al., [“Scikit-learn: Machine Learning in Python”](https://jmlr.org/papers/v12/pedregosa11a.html), *JMLR*, vol. 12, pp. 2825–2830, 2011.
-5. C. Nadeau y Y. Bengio, [“Inference for the Generalization Error”](https://link.springer.com/article/10.1023/A:1024068626366), *Machine Learning*, vol. 52, pp. 239–281, 2003.
+5. C. Nadeau y Y. Bengio, [“Inference for the Generalization Error”](https://link.springer.com/article/10.1023/A:1024068626366), *Machine Learning*, vol. 52, pp. 239–281, 2003, doi: 10.1023/A:1024068626366.
 6. L. van der Maaten y G. Hinton, [“Visualizing Data using t-SNE”](https://jmlr.org/papers/v9/vandermaaten08a.html), *JMLR*, vol. 9, pp. 2579–2605, 2008.
 
 ### Indicaciones de IA registradas

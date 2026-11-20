@@ -1,0 +1,11 @@
+{
+  "seed": 42,
+  "valid_images": 26177,
+  "incidents": 2,
+  "near_duplicate_hamming_threshold": 3,
+  "similarity_groups": 24791,
+  "mixed_label_groups": 0,
+  "development_images": 20941,
+  "test_images": 5236,
+  "selected_fold": 1
+}

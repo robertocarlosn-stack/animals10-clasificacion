@@ -1,0 +1,22 @@
+{
+  "alpha": 0.05,
+  "practical_margin_macro_f1": 0.005,
+  "pairs": 10,
+  "mean_macro_f1_logistic": 0.9556033468178569,
+  "mean_macro_f1_svm": 0.9620226103479437,
+  "mean_difference_svm_minus_logistic": 0.006419263530086516,
+  "difference_sd": 0.00338556518536485,
+  "corrected_standard_error": 0.0020029274032930242,
+  "corrected_t": 3.20494068808114,
+  "corrected_p_two_sided": 0.01074577773561496,
+  "corrected_ci95": [
+    0.0018883269581623924,
+    0.01095020010201064
+  ],
+  "cohen_dz_descriptive": 1.8960685080989619,
+  "shapiro_p": 0.39907660136796314,
+  "ordinary_paired_t_p": 0.00020352154144012737,
+  "wilcoxon_p": 0.001953125,
+  "mean_valid_train_ratio": 0.25000000997535643,
+  "reject_h0_corrected": true
+}
